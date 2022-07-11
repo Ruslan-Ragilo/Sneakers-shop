@@ -1,0 +1,14 @@
+.wrapperEmptyCart {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    h3 {
+        font-size: 22px;
+    }
+
+    p {
+        color: #999999;
+    }
+}

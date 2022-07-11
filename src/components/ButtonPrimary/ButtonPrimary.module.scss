@@ -1,0 +1,31 @@
+.btnPrimary {
+    background: #9DD558;
+    border-radius: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btnCartOrder {
+    width: 100%;
+    padding: 18px 0;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+
+    &.btnReturn {
+        width: 70%;
+    }
+
+    .arrowRigth {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .arrowLeft {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+}

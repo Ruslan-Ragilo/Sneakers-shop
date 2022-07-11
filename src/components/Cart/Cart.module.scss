@@ -1,0 +1,98 @@
+.overlayDrawer {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    overflow-x: hidden;
+
+    &.active {
+      visibility: visible;
+    }
+
+    .drawer {
+      position: fixed;
+      right: -100%;
+      background-color: #fff;
+      width: 385px;
+      height: 100%;
+      padding: 30px 20px 30px 30px;
+      transition: .3s;
+
+      &.active {
+        right: 0%;
+      }
+
+      .topDrawer {
+        .wrapperItemCart {
+          overflow-y: scroll;
+          max-height: 50vh;
+
+
+          &::-webkit-scrollbar {
+            width: 7px;
+          }
+
+
+          &::-webkit-scrollbar-track {
+            background-color: transparent;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: rgb(157,213,88);
+            border-radius: 10px;
+          }
+        }
+
+        .cartItem {
+          background: #FFFFFF;
+          border: 1px solid #F3F3F3;
+          border-radius: 20px;
+          padding: 20px;
+  
+          .sneakersImgInCart {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+
+      .bottomDrawer {
+        ul {
+          &.leaders li { clear: both; }
+
+          &.leaders li span:first-child {
+            float: left;
+            padding: 0 .4em 0 0;
+            margin: 0;
+          }
+
+          &.leaders li span + span {
+            float: right;
+            padding: 0 0 0 .4em;
+            margin: 0;
+          }
+
+          &.leaders li:after {
+            content: "";
+            display: block;
+            overflow: hidden;
+            height: 1em;
+            border-bottom: 1px dashed #DFDFDF;
+          }
+
+          .leaders>li>span {
+            font-size: 16px;
+          }
+  
+          .leaders>li>span:nth-child(2) {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
